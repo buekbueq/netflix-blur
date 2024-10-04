@@ -33,7 +33,7 @@ async function applyBlurAtSpecificTime() {
   });
 
   if (!videoElement) {
-    console.error("비디오 요소를 찾을 수 없습니다.");
+    console.error("Can't find the video factor.");
     return;
   }
 
@@ -57,7 +57,7 @@ async function applyBlurAtSpecificTime() {
 chrome.runtime.onMessage.addListener((message: any) => {
   if (message.type === "SAVE_BLUR_TIMES") {
     blurTimes = message.intervals;
-    console.log("저장된 블러 시간:", blurTimes);
+    console.log("Time for blurring:", blurTimes);
     applyBlurAtSpecificTime();  // 시간 기반 블러링 적용
   } else if (message.type === "ADD_BLUR_BUTTON") {
     initShortcut();
