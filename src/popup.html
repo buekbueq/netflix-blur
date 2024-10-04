@@ -15,18 +15,18 @@
     button {
       margin-top: 10px;
     }
+    .time-interval {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
-  <h2>Set Blur Time</h2>
-  <label for="start-time">Start Time (mm:ss):</label>
-  <input type="text" id="start-time" placeholder="01:30" /><br />
-  
-  <label for="end-time">End Time (mm:ss):</label>
-  <input type="text" id="end-time" placeholder="01:45" /><br />
-  
+  <h2>Set Blur Time Intervals</h2>
+  <div id="time-intervals"></div>
+
+  <button id="add-interval">Add Time Interval</button>
   <button id="save-button">Save</button>
-  
+
   <script src="popup.js"></script>
 </body>
 </html>
