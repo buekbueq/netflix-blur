@@ -14,7 +14,7 @@
     {
       "matches": ["https://www.netflix.com/*"],
       "run_at": "document_end",
-      "js": ["contentScript.js"],
+      "js": ["contentScript_time.js"],
       "css": ["contentScript.css"]
     }
   ]
