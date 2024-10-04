@@ -7,19 +7,19 @@
     "128": "icons/icon_128.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "build/background.js"
   },
   "host_permissions": ["https://www.netflix.com/*"],
   "content_scripts": [
     {
       "matches": ["https://www.netflix.com/*"],
       "run_at": "document_end",
-      "js": ["contentScript_time.js"],
-      "css": ["contentScript.css"]
+      "js": ["build/contentScript_time.js"],
+      "css": ["src/contentScript.css"]
     }
   ],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "src/popup.html",
     "default_icon": "icons/icon48.png"
   }
 }
