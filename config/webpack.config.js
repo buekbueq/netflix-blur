@@ -8,7 +8,7 @@ const PATHS = require("./paths");
 // Merge webpack configuration files
 const config = merge(common, {
   entry: {
-    contentScript: PATHS.src + "/contentScript",
+    contentScript: PATHS.src + "/contentScript_time", //for time blur
     background: PATHS.src + "/background",
   },
   resolve: {
