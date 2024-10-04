@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./build/",
+    "outDir": "./public/build/",  // ./ -> ./public
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "es6",
