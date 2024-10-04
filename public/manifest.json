@@ -15,11 +15,11 @@
       "matches": ["https://www.netflix.com/*"],
       "run_at": "document_end",
       "js": ["build/contentScript_time.js"],
-      "css": ["src/contentScript.css"]
+      "css": ["contentScript.css"]
     }
   ],
   "action": {
-    "default_popup": "src/popup.html",
+    "default_popup": "popup.html",
     "default_icon": "icons/icon_128.png"
   }
 }
