@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "strict": true,
     "allowJs": true,
+    "skipLibCheck": true  / skip for confliction within lib
   },
   "include": ["./src/**/*"]
 }
